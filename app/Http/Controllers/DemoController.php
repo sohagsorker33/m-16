@@ -55,7 +55,32 @@ function  HeaderMiddleware(Request $request){
     
 }
  
+// middleware group---------------------------------
 
+
+function GroupMiddleware1(Request $request){
+
+    return "Middleware Group1 check success";
+}
+
+function GroupMiddleware2(Request $request){
+
+    return "Middleware Group2 check success";
+}
+function GroupMiddleware3(Request $request){
+
+    return "Middleware Group3 check success";
+}
+
+function GroupMiddleware4(Request $request){
+
+    return "Middleware Group4 check success";
+}
+
+function GroupMiddleware5(Request $request){
+
+    return "Middleware Group5 check success";
+}
 
 
 

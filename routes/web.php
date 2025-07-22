@@ -15,3 +15,14 @@ Route::get('demo3',[DemoController::class, 'SessionGet']);
 Route::get('demo4',[DemoController::class, 'SessionForget']);
 Route::get('demo5',[DemoController::class, 'SessionFlush']);
 Route::get('demo6',[DemoController::class, 'HeaderMiddleware'])->middleware([DemoMiddleware::class]);
+// milldeware group----------
+
+ Route::middleware(['demo'])->group(function(){
+
+    Route::get('demo7/{url_paramiter}',[DemoController::class, 'GroupMiddleware1']);
+    Route::get('demo8/{url_paramiter}',[DemoController::class, 'GroupMiddleware2']);
+    Route::get('demo9/{url_paramiter}',[DemoController::class, 'GroupMiddleware3']);
+    Route::get('demo10/{url_paramiter}',[DemoController::class, 'GroupMiddleware4']);
+    Route::get('demo11/{url_paramiter}',[DemoController::class, 'GroupMiddleware5']);
+
+ });
