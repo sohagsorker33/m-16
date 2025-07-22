@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BladeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\DemoMiddleware;
 use App\Http\Controllers\DemoController;
@@ -26,3 +27,9 @@ Route::get('demo6',[DemoController::class, 'HeaderMiddleware'])->middleware([Dem
     Route::get('demo11/{url_paramiter}',[DemoController::class, 'GroupMiddleware5']);
 
  });
+
+
+ // blade route-----------------
+
+Route::get('/blade1/{num1}/{num2}',[BladeController::class,'BladeFile']);
+Route::get('/blade2/{num1}/{num2}',[BladeController::class,'BladeFile2']);
