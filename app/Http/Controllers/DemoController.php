@@ -41,11 +41,24 @@ class DemoController extends Controller
 
  }
 
+ // Session Flush bolte sob data delete kora
  function SessionFlush(Request $request){
 
      return $request->session()->flush();
 
  }
+
+
+function  HeaderMiddleware(Request $request){
+
+    return "Middleware Header check success";
+    
+}
+ 
+
+
+
+
 
 
 }
