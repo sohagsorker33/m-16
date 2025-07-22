@@ -1,4 +1,4 @@
-
+ 
  <h1>Your Result is {{$result}}</h1>
 
 @if($result>=80)
@@ -15,5 +15,6 @@
   <h1>This is a D</h1>
 @else 
    <h1>This is a Fail</h1>
-
+   
 @endif
+ 

@@ -33,3 +33,4 @@ Route::get('demo6',[DemoController::class, 'HeaderMiddleware'])->middleware([Dem
 
 Route::get('/blade1/{num1}/{num2}',[BladeController::class,'BladeFile']);
 Route::get('/blade2/{num1}/{num2}',[BladeController::class,'BladeFile2']);
+Route::get('/blade3',[BladeController::class,'BladeFile3']);

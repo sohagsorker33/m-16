@@ -21,4 +21,19 @@ class BladeController extends Controller
         $data=['result'=>$sum];
         return view('home',$data);
     }
+
+    function BladeFile3(Request $request){
+       
+       $data=[
+
+          ['name'=>'sohag','age'=>20],
+          ['name'=>'rofikul','age'=>21],
+          ['name'=>'badal','age'=>20],
+          ['name'=>'sakib','age'=>22],
+          ['name'=>'solaman','age'=>10]
+
+       ];
+
+        return view('loop',['users'=>$data]);
+    }
 }
